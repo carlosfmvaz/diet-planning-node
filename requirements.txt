@@ -1,0 +1,19 @@
+Meal_Info:
+- id int PK 
+- meal_number_order int, 
+- meal_description varchar, // almoço, café da tarde, janta...
+- user_id FK int,
+- meal_time date,
+
+Meal_Food
+- id int PK
+- food_name varchar, // aveia em flocos
+- quantity_in_grams int,
+- quantity_in_units int,
+- meal_info_id FK int,
+
+
+User:
+- name varchar,
+- email varchar,
+- password,
